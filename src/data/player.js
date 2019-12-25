@@ -1,4 +1,6 @@
 export const PLAYER_MAX_ENERGY = 10;
+export const PLAYER_MAX_MONEY  = 99999;
+export const PLAYER_MAX_MUSHROOMS  = 99999;
 
 const player = {
   name: "Player",
