@@ -1,0 +1,52 @@
+.GameScreen {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.GameLocationImage {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: black;
+}
+
+.GameScreenHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.GamePlayerStats span {
+  margin-right: 0.5rem;
+}
+
+.GameLocationImage img {
+  width: 60vw;
+  height: 55vh;
+}
+
+.GameAction button {
+  padding: 5px;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .GameLocationImage img {
+    width: 70vw;
+    height: 55vh;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .GameLocationImage img {
+    width: 60vw;
+    height: 55vh;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  background: silver;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.locations {
+  background-color: black;
+  float: right;
+  width: 20vw;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
