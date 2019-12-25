@@ -12,13 +12,13 @@ import "./css/index.css";
 const App = () => {
   const [player, updatePlayer] = useState(Player);
   const GlobalLocationData = new LocationsData(updatePlayer);
-  const [Locations] = useState(GlobalLocationData.locations);
-  const [currentLoc, setCurrentLoc] = useState(GlobalLocationData.locations[0]);
+  const [locations] = useState(GlobalLocationData.locations);
+  const [location, setLocation] = useState(GlobalLocationData.locations[0]);
 
   return (
     <div className="App">
-      <GameScreen currentLoc={currentLoc} player={player} />
-      <LocationPanel locations={Locations} setCurrentLoc={setCurrentLoc} />
+      <GameScreen location={location} player={player} locations={locations} setLocation={setLocation}  />
+      {/*<LocationPanel locations={Locations} setCurrentLoc={setCurrentLoc} />*/}
     </div>
   );
 };

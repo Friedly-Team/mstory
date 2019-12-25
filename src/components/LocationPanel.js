@@ -1,10 +1,22 @@
 import React from "react";
 
-const LocationPanel = props => {
-  const showLocations = obj => (
-    <button onClick={() => props.setCurrentLoc(obj)}>{obj.title}</button>
+import '../css/LocationPanel.css';
+
+const LocationPanel = ({setLocation, locations}) => {
+  const showLocations = ({title}) => (
+    <option value={title} key={title}>
+      {title}
+    </option>
   );
-  return <div className="locations">{props.locations.map(showLocations)}</div>;
+  return <div className="LocationPanel">
+    <select onChange={({currentTarget}) => {
+      const v = currentTarget.value;
+      const obj = locations.find(el => el.title === v);
+      setLocation(obj)
+    }}>
+      {locations.map(showLocations)}
+    </select>
+  </div>;
 };
 
 export default LocationPanel;

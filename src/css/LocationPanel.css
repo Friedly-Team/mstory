@@ -1,0 +1,15 @@
+.LocationPanel select {
+  font-size: 15px;
+  color: ghostwhite;
+}
+
+/*.LocationPanel select {*/
+/*    background: none;*/
+/*    color: palevioletred;*/
+/*    border: none;*/
+/*}*/
+
+/*.LocationPanel button:focus {*/
+/*    font-weight: bold;*/
+/*    cursor: pointer;*/
+/*}*/
