@@ -11,9 +11,10 @@ const GameScreen = ({location, player, locations, setLocation}) => {
     <div className="GameScreen">
       <div className="GameScreenHeader">
         <div className="GamePlayerStats">
-          <span>🔋: {player.energy} </span>
-          <span>🍄: {player.mushrooms} </span>
-          <span>💰: {player.money} </span>
+          <span>Day 1</span>
+          <span>🔋 {player.energy} </span>
+          <span>🍄 {player.mushrooms} </span>
+          <span>💰 {player.money} </span>
         </div>
         <LocationPanel locations={locations} setLocation={setLocation} />
       </div>

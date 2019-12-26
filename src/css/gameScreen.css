@@ -10,21 +10,24 @@
 }
 
 .GameScreenHeader {
-  padding-top: 0.4rem;
   background: #795548;
+  border-bottom: 1px solid #2f1e1b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0.4rem;
+
 }
 
 .GamePlayerStats {
-  padding-top: 0.4rem;
-  vertical-align: middle;
+  color: whitesmoke;
   display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
-.GamePlayerStats span {
-  margin-right: 0.5rem;
+.GamePlayerStats span:first-child{
+  color: #FFC107;
 }
 
 .GameLocationImage img {
@@ -32,10 +35,16 @@
   height: 55vh;
 }
 
+.GameAction {
+  background: #795547;
+  padding: 1rem;
+}
+
 .GameAction button {
   background: silver;
   padding: 5px;
   margin-right: 0.2rem;
+  min-width: 4rem;
 }
 @media only screen and (min-width: 320px) {
   .GameScreen {
