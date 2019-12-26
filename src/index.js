@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
+import { Player, LocationsData } from "./data";
 
 import GameScreen from "./components/GameScreen";
-import LocationPanel from "./components/LocationPanel";
-import Player from "./data/player";
-
-import LocationsData from "./data/locations";
 
 import "./css/index.css";
 
@@ -17,8 +14,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <GameScreen location={location} player={player} locations={locations} setLocation={setLocation}  />
-      {/*<LocationPanel locations={Locations} setCurrentLoc={setCurrentLoc} />*/}
+      <GameScreen
+        location={location}
+        player={player}
+        locations={locations}
+        setLocation={setLocation}
+      />
     </div>
   );
 };

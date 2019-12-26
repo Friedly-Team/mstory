@@ -5,29 +5,7 @@
 }
 
 .GameLocationImage {
-  margin: 0 auto;
   background: black;
-}
-
-.GameScreenHeader {
-  background: #795548;
-  border-bottom: 1px solid #2f1e1b;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.4rem;
-
-}
-
-.GamePlayerStats {
-  color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.GamePlayerStats span:first-child{
-  color: #FFC107;
 }
 
 .GameLocationImage img {
@@ -36,8 +14,12 @@
 }
 
 .GameAction {
+  border-top: 1px solid black;
   background: #795547;
-  padding: 1rem;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 
 .GameAction button {
@@ -62,15 +44,15 @@
     width: 100vw;
   }
   .GameLocationImage img {
-    width: 20vw;
-    height: 35vh;
+    width: 100vw;
+    height: 71vh;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .GameLocationImage img {
-    width: 60vw;
-    height: 55vh;
+    width: 100vw;
+    height: 75vh;
   }
 }
 /* Medium Devices, Desktops */
