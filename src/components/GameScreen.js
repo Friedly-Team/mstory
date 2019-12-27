@@ -1,15 +1,10 @@
 import React from "react";
 import GameHeader from "./GameHeader";
+import GameActionsPanel from "./GameActionsPanel";
 
 import "../css/GameScreen.css"
 
-const GameScreen = ({location, player, locations, setLocation}) => {
-  const { actions, image } = location;
-  const actionUI = ({func, name}) => (
-    <button onClick={() => func(player)} key={name}>
-      {name}
-    </button>
-  );
+const GameScreen = ({location, player, update, locations, setLocation}) => {
   return (
     <div className="GameScreen">
       <GameHeader
@@ -18,9 +13,13 @@ const GameScreen = ({location, player, locations, setLocation}) => {
         setLocation={setLocation}
       />
       <div className="GameLocationImage">
-        <img src={image} alt="" />
+        <img src={location.image} alt="" />
       </div>
-      <div className="GameAction">{actions.map(actionUI)}</div>
+      <GameActionsPanel
+        location={location}
+        player={player}
+        update={update}
+      />
     </div>
   );
 };

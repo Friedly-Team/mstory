@@ -3,6 +3,10 @@
   color: ghostwhite;
 }
 
+.LocationPanel select:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
   .LocationPanel select {
     font-size: 17px;

@@ -8,17 +8,23 @@ import "./css/index.css";
 
 const App = () => {
   const [player, updatePlayer] = useState(Player);
-  const GlobalLocationData = new LocationsData(updatePlayer);
-  const [locations] = useState(GlobalLocationData.locations);
-  const [location, setLocation] = useState(GlobalLocationData.locations[0]);
+  const updatePlayerData = newObject => {
+    updatePlayer({
+      ...player,
+      ...newObject
+    })
+  };
+  const [locations] = useState(LocationsData);
+  const [currentLocation, setCurrLocation] = useState(LocationsData[0]);
 
   return (
     <div className="App">
       <GameScreen
-        location={location}
         player={player}
+        update={updatePlayerData}
+        location={currentLocation}
         locations={locations}
-        setLocation={setLocation}
+        setLocation={setCurrLocation}
       />
     </div>
   );
