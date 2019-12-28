@@ -4,6 +4,7 @@ const player = {
   name: "Player",
 
   energy: PLAYER_MAX_ENERGY,
+  maxEnergy: PLAYER_MAX_ENERGY,
   mushrooms: 0,
   money: 0,
 

@@ -1,0 +1,24 @@
+.GameScreenHeader {
+  background: #795548;
+  border-top: 2px solid #2f1e1b;
+  border-bottom: 2px solid #2f1e1b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+
+.GamePlayerStats {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.GamePlayerStats span:first-child{
+  font-weight: 900;
+  color: #FFC107;
+}
+.GamePlayerStats span {
+  margin-right: 1rem;
+}

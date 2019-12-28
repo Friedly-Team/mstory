@@ -1,29 +1,25 @@
 import React from "react";
+import GameHeader from "./GameHeader";
+import GameActionsPanel from "./GameActionsPanel";
 
-import "../css/gameScreen.css";
+import "../css/GameScreen.css"
 
-const GameScreen = props => {
-  const loc = props.currentLoc;
-  const player = props.player;
-  const actionUI = obj => (
-    <button onClick={() => obj.func(player)}>{obj.name}</button>
-  );
+const GameScreen = ({location, player, update, locations, setLocation}) => {
   return (
     <div className="GameScreen">
-      <div className="GameScreenHeader">
-        <div className="GamePlayerStats">
-          <span>Energy: {player.energy} </span>
-          <span>Гриб: {player.mushrooms} </span>
-          <span>Money: {player.money} </span>
-        </div>
-        <div>
-          <h2>{loc.title}</h2>
-        </div>
-      </div>
+      <GameHeader
+        player={player}
+        locations={locations}
+        setLocation={setLocation}
+      />
       <div className="GameLocationImage">
-        <img src={loc.image} alt="" />
+        <img src={location.image} alt="" />
       </div>
-      <div className="GameAction">{loc.actions.map(actionUI)}</div>
+      <GameActionsPanel
+        location={location}
+        player={player}
+        update={update}
+      />
     </div>
   );
 };

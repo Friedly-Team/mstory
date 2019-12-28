@@ -5,20 +5,7 @@
 }
 
 .GameLocationImage {
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   background: black;
-}
-
-.GameScreenHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.GamePlayerStats span {
-  margin-right: 0.5rem;
 }
 
 .GameLocationImage img {
@@ -26,22 +13,46 @@
   height: 55vh;
 }
 
-.GameAction button {
-  padding: 5px;
+.GameAction {
+  border-top: 1px solid black;
+  background: #795547;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 
+.GameAction button {
+  background: silver;
+  padding: 5px;
+  margin-right: 0.2rem;
+  min-width: 4rem;
+}
+@media only screen and (min-width: 320px) {
+  .GameScreen {
+    width: 100vw;
+  }
+
+  .GameLocationImage img {
+    width: 100vw;
+    height: 37vh;
+  }
+}
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
+  .GameScreen {
+    width: 100vw;
+  }
   .GameLocationImage img {
-    width: 70vw;
-    height: 55vh;
+    width: 100vw;
+    height: 71vh;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .GameLocationImage img {
-    width: 60vw;
-    height: 55vh;
+    width: 100vw;
+    height: 81vh;
   }
 }
 /* Medium Devices, Desktops */
