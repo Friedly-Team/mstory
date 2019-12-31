@@ -1,3 +1,5 @@
+import { dice } from '../data/utils.js';
+
 export const PLAYER_MAX_ENERGY = 10;
 export const PLAYER_MAX_LUCK = 10;
 export const PLAYER_DEFAULT_LUCK = 1;
@@ -9,19 +11,6 @@ const MAX_MUSHROOM_PICK_CHANCE = 1;
 // from 0 to 1
 function getMushroomChance(luckValue) {
   return MAX_MUSHROOM_PICK_CHANCE * luckValue / PLAYER_MAX_LUCK;
-}
-
-/*
-Example:
-chance = 0.3 = 30%
-diceValue: 100 < chance  => false
-diceValue: 31  < chance  => false
-diceValue: 30  = chance  => true
-diceValue: 1   < chance  => true
- */
-function dice(chance) {
-  const diceValue = Math.floor((Math.random() * 100) + 1); // 1 to 100
-  return diceValue <= chance * 100;
 }
 
 const player = {
