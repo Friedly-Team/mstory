@@ -1,4 +1,4 @@
-import {boolDice} from '../utils';
+import {dice} from '../utils';
 
 function eat (player, updatePlayer) {
   if (player.hasMushrooms() && player.energy < player.maxEnergy) {
@@ -27,12 +27,16 @@ function sell (player, updatePlayer) {
 function collect (player, updatePlayer) {
   if (player.hasEnergy()) {
     let updatedMushrooms = player.mushrooms;
-    const shouldFind = boolDice();
+    let updatedLuck = player.luck;
+
+    const shouldFind = dice(player.luck);
     if (shouldFind) {
       updatedMushrooms += 1;
+      updatedLuck += 0.5;
     }
     updatePlayer({
       mushrooms: updatedMushrooms,
+      luck: updatedLuck,
       energy: player.energy - 1
     });
   }

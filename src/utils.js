@@ -1,6 +1,8 @@
+
+// chance [0..100]
 const dice = chance => {
   const value =  Math.floor((Math.random() * 100)) + 1;
-  return value <= chance * 100;
+  return value <= chance;
 };
 
 const boolDice = () => {
