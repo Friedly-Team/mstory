@@ -1,6 +1,7 @@
 .LocationPanel select {
   font-size: 20px;
-  color: ghostwhite;
+  font-weight: bolder;
+  color: #2f1e1b;
 }
 
 .LocationPanel select:hover {
@@ -10,6 +11,7 @@
 @media only screen and (min-width: 768px) {
   .LocationPanel select {
     font-size: 17px;
-    color: #CDDC39;
+    font-weight: bolder;
+    color: #2f1e1b;
   }
 }

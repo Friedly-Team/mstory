@@ -1,8 +1,9 @@
 import React from "react";
 import GameHeader from "./GameHeader";
+import PlayerEnergyBar from './PlayerEnergyBar';
 import GameActionsPanel from "./GameActionsPanel";
 
-import "../css/GameScreen.css"
+import "../css/GameScreen.css";
 
 const GameScreen = ({location, player, update, locations, setLocation}) => {
   return (
@@ -12,6 +13,7 @@ const GameScreen = ({location, player, update, locations, setLocation}) => {
         locations={locations}
         setLocation={setLocation}
       />
+      <PlayerEnergyBar player={player} />
       <div className="GameLocationImage">
         <img src={location.image} alt="" />
       </div>
