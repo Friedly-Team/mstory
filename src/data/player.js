@@ -12,8 +12,8 @@ const player = {
   maxEnergy: PLAYER_MAX_ENERGY,
   dayCount: 1,
   // parameters
-  luck: PLAYER_DEFAULT_LUCK,
-  maxLuck: PLAYER_MAX_LUCK,
+  // luck: PLAYER_DEFAULT_LUCK,
+  // maxLuck: PLAYER_MAX_LUCK,
   // inventory
   mushrooms: 0,
   money: 0,
