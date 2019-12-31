@@ -9,6 +9,7 @@ export default ({player, locations, setLocation}) => {
       <div className="GamePlayerStats">
         <span>Day 1</span>
         <span>🔋 {player.energy} </span>
+        <span>☘️ {player.luck} </span>
         <span>🍄 {player.mushrooms} </span>
         <span>💰 {player.money} </span>
       </div>

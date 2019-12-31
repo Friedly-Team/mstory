@@ -1,3 +1,5 @@
+import {dice} from '../utils';
+
 function eat (player, updatePlayer) {
   if (player.hasMushrooms() && player.energy < player.maxEnergy) {
     updatePlayer(
@@ -24,8 +26,17 @@ function sell (player, updatePlayer) {
 
 function collect (player, updatePlayer) {
   if (player.hasEnergy()) {
+    let updatedMushrooms = player.mushrooms;
+    let updatedLuck = player.luck;
+
+    const shouldFind = dice(player.luck);
+    if (shouldFind) {
+      updatedMushrooms += 1;
+      updatedLuck += 0.5;
+    }
     updatePlayer({
-      mushrooms: player.mushrooms + 1,
+      mushrooms: updatedMushrooms,
+      luck: updatedLuck,
       energy: player.energy - 1
     });
   }
