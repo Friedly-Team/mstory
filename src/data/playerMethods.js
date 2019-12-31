@@ -24,8 +24,13 @@ function sell (player, updatePlayer) {
 
 function collect (player, updatePlayer) {
   if (player.hasEnergy()) {
+    let updatedMushrooms = player.mushrooms;
+    if (player.tryCollectMushrooms()) {
+      updatedMushrooms += 1;
+    }
+
     updatePlayer({
-      mushrooms: player.mushrooms + 1,
+      mushrooms: updatedMushrooms,
       energy: player.energy - 1
     });
   }
