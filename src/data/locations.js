@@ -34,6 +34,10 @@ const LocationsData = [
     image: forest,
     actions: [
       {
+        name: "eat",
+        func: eat
+      },
+      {
         name: "collect mushrooms",
         func: collect
       },
