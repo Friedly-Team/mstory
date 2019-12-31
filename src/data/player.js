@@ -9,6 +9,7 @@ const player = {
   // stats
   energy: PLAYER_MAX_ENERGY,
   maxEnergy: PLAYER_MAX_ENERGY,
+  dayCount: 1,
   // parameters
   luck: PLAYER_DEFAULT_LUCK,
   maxLuck: PLAYER_MAX_LUCK,
