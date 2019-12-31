@@ -12,7 +12,10 @@ function eat (player, updatePlayer) {
 }
 
 function sleep (player, updatePlayer) {
-  updatePlayer({ energy: player.maxEnergy })
+  updatePlayer({
+    energy: player.maxEnergy,
+    dayCount: player.dayCount + 1
+  })
 }
 
 function sell (player, updatePlayer) {

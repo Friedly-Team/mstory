@@ -7,7 +7,7 @@ export default ({player, locations, setLocation}) => {
   return (
     <div className="GameScreenHeader">
       <div className="GamePlayerStats">
-        <span>Day 1</span>
+        <span>Day {player.dayCount} </span>
         <span>🔋 {player.energy} </span>
         <span>☘️ {player.luck} </span>
         <span>🍄 {player.mushrooms} </span>
