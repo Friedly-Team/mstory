@@ -22,6 +22,7 @@ const player = {
 
   // parameters
   luck: PLAYER_DEFAULT_LUCK,
+  maxLuck: PLAYER_MAX_LUCK,
 
   // inventory
   mushrooms: 0,
