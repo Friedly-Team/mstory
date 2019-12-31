@@ -6,6 +6,7 @@ export const PLAYER_DEFAULT_LUCK = 25;
 
 const player = {
   name: "Player",
+
   // stats
   energy: PLAYER_MAX_ENERGY,
   maxEnergy: PLAYER_MAX_ENERGY,
@@ -16,6 +17,11 @@ const player = {
   // inventory
   mushrooms: 0,
   money: 0,
+
+  tryCollectMushrooms() {
+    const chanceToPickMushroom = getMushroomChance(this.luck);
+    return dice(chanceToPickMushroom);
+  },
 
   hasMoney: function () {
     return this.money > 0;

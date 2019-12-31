@@ -37,6 +37,7 @@ function collect (player, updatePlayer) {
       updatedMushrooms += 1;
       updatedLuck += 0.5;
     }
+
     updatePlayer({
       mushrooms: updatedMushrooms,
       luck: updatedLuck,
