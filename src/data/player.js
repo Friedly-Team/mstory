@@ -2,7 +2,7 @@ import { dice } from '../utils';
 
 export const PLAYER_MAX_ENERGY = 10;
 export const PLAYER_MAX_LUCK = 100;
-export const PLAYER_DEFAULT_LUCK = 10;
+export const PLAYER_DEFAULT_LUCK = 25;
 
 const player = {
   name: "Player",
