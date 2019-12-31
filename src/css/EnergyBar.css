@@ -1,0 +1,17 @@
+.EnergyBar {
+  background: #424242;
+  border-bottom: 1px solid #2f1e1b;
+  width: 100%;
+  height: 18px;
+}
+.EnergyBarValue {
+  width: 100%;
+  height: inherit;
+  background: #009688;
+}
+.EnergyBarText {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+}

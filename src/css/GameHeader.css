@@ -1,5 +1,6 @@
 .GameScreenHeader {
   background: #795548;
+  position: relative;
   border-top: 2px solid #2f1e1b;
   border-bottom: 2px solid #2f1e1b;
   display: flex;
